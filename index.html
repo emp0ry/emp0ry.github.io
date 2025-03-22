@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QY5L70VTTG"></script>
     <script>
@@ -10,7 +11,6 @@
     gtag('config', 'G-QY5L70VTTG');
     </script>
 
-    <meta charset="UTF-8">
     <meta name="language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="emp0ry's Hub - Explore my projects including ErScripts for CS2 scripting and Hide-Icons for desktop customization.">
@@ -20,13 +20,21 @@
 
     <!-- Security -->
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com;">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://www.googletagmanager.com;
+        style-src 'self' https://fonts.googleapis.com;
+        font-src https://fonts.gstatic.com;
+        img-src 'self';
+        connect-src 'self' https://www.google-analytics.com;
+        frame-ancestors 'self';
+    ">
 
     <!-- Performance -->
     <meta name="theme-color" content="#4b0082">
 
     <!-- Apple -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Open Graph / Facebook -->
@@ -34,7 +42,6 @@
     <meta property="og:url" content="https://emp0ry.github.io/">
     <meta property="og:title" content="emp0ry's Hub">
     <meta property="og:description" content="Explore my projects including ErScripts for CS2 scripting and Hide-Icons for desktop customization.">
-    <!-- <meta property="og:image" content="https://emp0ry.github.io/images/hub-image.png"> -->
     <meta property="og:site_name" content="emp0ry's Hub">
 
     <!-- Twitter -->
@@ -42,19 +49,18 @@
     <meta name="twitter:url" content="https://emp0ry.github.io/">
     <meta name="twitter:title" content="emp0ry's Hub">
     <meta name="twitter:description" content="Explore my projects including ErScripts for CS2 scripting and Hide-Icons for desktop customization.">
-    <!-- <meta name="twitter:image" content="https://emp0ry.github.io/images/hub-image.png"> -->
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://emp0ry.github.io/">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon-dark.png">
+    <!-- Favicon (assumes favicon.png in repo root) -->
+    <link rel="icon" type="image/png" href="/favicon.png">
 
     <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
     <title>emp0ry's Hub - Projects by emp0ry</title>
 
@@ -74,14 +80,22 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <h1>emp0ry's Hub</h1>
-        <p>Welcome to my collection of projects! Explore ErScripts for Counter-Strike 2 scripting and Hide-Icons for desktop customization below.</p>
-        <div class="project-buttons">
-            <a href="/ErScripts/" class="btn" aria-label="Visit ErScripts">ErScripts</a>
-            <a href="/Hide-Icons/" class="btn" aria-label="Visit Hide-Icons">Hide-Icons</a>
+    <header>
+        <div class="container">
+            <h1>emp0ry's Hub</h1>
         </div>
-    </div>
+    </header>
+
+    <main class="container">
+        <section class="about">
+            <p>Welcome to my collection of projects! Explore <strong>ErScripts</strong> for Counter-Strike 2 scripting and <strong>Hide-Icons</strong> for desktop customization below.</p>
+            <div class="project-buttons">
+                <a href="/ErScripts/" class="btn" aria-label="Visit ErScripts">ErScripts</a>
+                <a href="/Hide-Icons/" class="btn" aria-label="Visit Hide-Icons">Hide-Icons</a>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p>© 2025 <a href="https://github.com/emp0ry/" aria-label="Visit emp0ry's GitHub profile">emp0ry</a></p>
     </footer>
