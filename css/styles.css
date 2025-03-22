@@ -7,22 +7,21 @@ html, body {
     color: #ffffff;
     min-height: 100vh;
     overflow-x: hidden; /* Prevent unwanted scrolling */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    touch-action: manipulation; /* Fix iOS bounce scrolling */
+    width: 100%;
 }
 
 /* Main Container */
 .container {
     max-width: 900px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 40px 20px;
-    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content */
+    align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* Heading Styles */
@@ -32,13 +31,6 @@ h1 {
     margin-bottom: 20px;
     color: #ffffff;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-p {
-    font-size: 1.3em;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 40px;
 }
 
 /* Project Buttons */
@@ -62,7 +54,6 @@ p {
     border-radius: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* iPhone tap highlight fix */
     text-align: center;
     min-width: 180px;
 }
@@ -86,26 +77,10 @@ footer {
     width: 100%;
 }
 
-footer a {
-    color: #9b30ff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer p {
-    margin: 20px;
-}
-
 /* Mobile Fixes */
 @media (max-width: 600px) {
     h1 {
         font-size: 2.5em;
-    }
-    p {
-        font-size: 1em;
     }
     .btn {
         padding: 12px 25px;
@@ -115,19 +90,12 @@ footer p {
     .container {
         padding: 20px 10px;
     }
-    .project-buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
 }
 
 /* Extra Fix for Narrow iPhones */
 @media (max-width: 400px) {
     h1 {
         font-size: 2.2em;
-    }
-    p {
-        font-size: 0.9em;
     }
     .btn {
         padding: 10px 20px;
