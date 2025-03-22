@@ -66,16 +66,18 @@ p {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer Fix */
 footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9em;
     background: rgba(47, 0, 87, 0.5);
-    width: 100%;
+    width: 100%; /* Ensure it spans the full width */
     position: relative; /* Ensure it stays at the bottom */
     bottom: 0;
     left: 0;
     right: 0;
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 footer p {
