@@ -82,6 +82,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer p {
+    margin: 20px;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     h1 {
