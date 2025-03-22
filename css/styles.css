@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -5,9 +6,9 @@ body {
     background: linear-gradient(135deg, #2f0057 0%, #4b0082 50%, #8a2be2 100%);
     color: #ffffff;
     min-height: 100vh;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -15,8 +16,8 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 40px 20px;
-    flex: 1;
-    text-align: center; /* Center-align content */
+    flex: 1; /* Takes up remaining space */
+    text-align: center;
 }
 
 h1 {
@@ -71,6 +72,14 @@ footer {
     font-size: 0.9em;
     background: rgba(47, 0, 87, 0.5);
     width: 100%;
+    position: relative; /* Ensure it stays at the bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
 }
 
 footer a {
@@ -80,17 +89,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-footer p {
-    margin: 20px;
-}
-
-/* Fallback for browsers that don’t support backdrop-filter (e.g., some Safari versions) */
-@supports not (backdrop-filter: blur(12px)) {
-    .about, .feature-card {
-        background: rgba(25, 0, 46, 0.8); /* Solid fallback */
-    }
 }
 
 /* Mobile responsiveness */
@@ -112,18 +110,12 @@ footer p {
         flex-direction: column; /* Stack buttons vertically */
         gap: 15px;
     }
-    .features {
-        grid-template-columns: 1fr; /* Single column */
-    }
 }
 
 /* Extra tweak for narrow iPhone screens (e.g., 375px or less) */
 @media (max-width: 400px) {
     h1 {
         font-size: 2.2em;
-    }
-    h2 {
-        font-size: 1.3em;
     }
     p {
         font-size: 0.9em;
@@ -133,8 +125,5 @@ footer p {
     }
     .container {
         padding: 15px 5px;
-    }
-    .feature-card {
-        padding: 15px;
     }
 }
