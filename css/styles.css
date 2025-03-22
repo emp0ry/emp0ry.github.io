@@ -86,6 +86,13 @@ footer p {
     margin: 20px;
 }
 
+/* Fallback for browsers that don’t support backdrop-filter (e.g., some Safari versions) */
+@supports not (backdrop-filter: blur(12px)) {
+    .about, .feature-card {
+        background: rgba(25, 0, 46, 0.8); /* Solid fallback */
+    }
+}
+
 /* Mobile responsiveness */
 @media (max-width: 600px) {
     h1 {
@@ -105,11 +112,18 @@ footer p {
         flex-direction: column; /* Stack buttons vertically */
         gap: 15px;
     }
+    .features {
+        grid-template-columns: 1fr; /* Single column */
+    }
 }
 
+/* Extra tweak for narrow iPhone screens (e.g., 375px or less) */
 @media (max-width: 400px) {
     h1 {
         font-size: 2.2em;
+    }
+    h2 {
+        font-size: 1.3em;
     }
     p {
         font-size: 0.9em;
@@ -119,5 +133,8 @@ footer p {
     }
     .container {
         padding: 15px 5px;
+    }
+    .feature-card {
+        padding: 15px;
     }
 }
