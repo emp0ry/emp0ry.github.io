@@ -122,9 +122,6 @@ footer p {
         flex-direction: column; /* Stack buttons vertically */
         gap: 15px;
     }
-    .features {
-        grid-template-columns: 1fr; /* Single column */
-    }
 }
 
 /* Extra tweak for narrow iPhone screens (e.g., 375px or less) */
@@ -143,8 +140,5 @@ footer p {
     }
     .container {
         padding: 15px 5px;
-    }
-    .feature-card {
-        padding: 15px;
     }
 }
