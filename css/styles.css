@@ -71,7 +71,7 @@
         font-size: 0.9em;
         background: rgba(47, 0, 87, 0.5);
         width: 100%;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         box-sizing: border-box;
