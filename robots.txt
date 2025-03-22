@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://emp0ry.github.io/sitemap.xml
