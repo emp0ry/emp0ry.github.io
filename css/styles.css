@@ -1,142 +1,145 @@
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #4b0082; /* Fallback */
-    background: linear-gradient(135deg, #2f0057 0%, #4b0082 50%, #8a2be2 100%);
-    color: #ffffff;
-    min-height: 100vh;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.container {
-    max-width: 900px;
-    width: 90%;
-    margin: 0 auto;
-    padding: 40px 20px;
-    flex: 1;
-    text-align: center; /* Center-align content */
-}
-
-h1 {
-    font-size: 3.5em;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-p {
-    font-size: 1.3em;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 40px;
-}
-
-.project-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between buttons */
-    flex-wrap: wrap; /* Wrap buttons on small screens */
-}
-
-.btn {
-    display: inline-block;
-    padding: 15px 35px;
-    font-size: 1.2em;
-    font-weight: 600;
-    color: #ffffff;
-    background: linear-gradient(90deg, #6a0dad, #9b30ff);
-    text-decoration: none;
-    border-radius: 50px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* iPhone touch fix */
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.btn:active {
-    transform: scale(0.95); /* Touch feedback */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    background: rgba(47, 0, 87, 0.5);
-    width: 100%;
-}
-
-footer a {
-    color: #9b30ff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer p {
-    margin: 20px;
-}
-
-/* Fallback for browsers that don’t support backdrop-filter (e.g., some Safari versions) */
-@supports not (backdrop-filter: blur(12px)) {
-    .about, .feature-card {
-        background: rgba(25, 0, 46, 0.8); /* Solid fallback */
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #4b0082; /* Fallback */
+        background: linear-gradient(135deg, #2f0057 0%, #4b0082 50%, #8a2be2 100%);
+        color: #ffffff;
+        min-height: 100vh;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
     }
-}
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.5em;
-    }
-    p {
-        font-size: 1em;
-    }
-    .btn {
-        padding: 12px 25px;
-        font-size: 1em;
-    }
     .container {
-        padding: 20px 10px;
+        max-width: 900px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px;
+        flex: 1;
+        text-align: center; /* Center-align content */
     }
-    .project-buttons {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 15px;
-    }
-    .features {
-        grid-template-columns: 1fr; /* Single column */
-    }
-}
 
-/* Extra tweak for narrow iPhone screens (e.g., 375px or less) */
-@media (max-width: 400px) {
     h1 {
-        font-size: 2.2em;
+        font-size: 3.5em;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #ffffff;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
-    h2 {
+
+    p {
         font-size: 1.3em;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 40px;
     }
-    p {
-        font-size: 0.9em;
+
+    .project-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Space between buttons */
+        flex-wrap: wrap; /* Wrap buttons on small screens */
     }
+
     .btn {
-        padding: 10px 20px;
+        display: inline-block;
+        padding: 15px 35px;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #ffffff;
+        background: linear-gradient(90deg, #6a0dad, #9b30ff);
+        text-decoration: none;
+        border-radius: 50px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* iPhone touch fix */
     }
-    .container {
-        padding: 15px 5px;
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
-    .feature-card {
+
+    .btn:active {
+        transform: scale(0.95); /* Touch feedback */
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        text-align: center;
         padding: 15px;
+        font-size: 0.9em;
+        background: rgba(47, 0, 87, 0.5);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+        color: #fff;
     }
-}
+
+    footer a {
+        color: #9b30ff;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    footer p {
+        margin: 20px;
+    }
+
+    /* Fallback for browsers that don’t support backdrop-filter (e.g., some Safari versions) */
+    @supports not (backdrop-filter: blur(12px)) {
+        .about, .feature-card {
+            background: rgba(25, 0, 46, 0.8); /* Solid fallback */
+        }
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1em;
+        }
+        .btn {
+            padding: 12px 25px;
+            font-size: 1em;
+        }
+        .container {
+            padding: 20px 10px;
+        }
+        .project-buttons {
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 15px;
+        }
+        .features {
+            grid-template-columns: 1fr; /* Single column */
+        }
+    }
+
+    /* Extra tweak for narrow iPhone screens (e.g., 375px or less) */
+    @media (max-width: 400px) {
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.3em;
+        }
+        p {
+            font-size: 0.9em;
+        }
+        .btn {
+            padding: 10px 20px;
+        }
+        .container {
+            padding: 15px 5px;
+        }
+        .feature-card {
+            padding: 15px;
+        }
+    }
