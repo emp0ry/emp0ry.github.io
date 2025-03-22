@@ -1,31 +1,24 @@
-/* Reset and Global Styles */
-html, body {
+body {
     margin: 0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
+    background: #4b0082; /* Fallback */
     background: linear-gradient(135deg, #2f0057 0%, #4b0082 50%, #8a2be2 100%);
     color: #ffffff;
     min-height: 100vh;
-    width: 100vw; /* Force full width */
-    overflow-x: clip; /* Prevents right-edge overflow */
-    touch-action: none; /* Disables scrolling beyond viewport */
-    position: fixed; /* Ensures no shifting when sliding */
-}
-
-/* Main Container */
-.container {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 40px 20px;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-sizing: border-box;
 }
 
-/* Heading Styles */
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex: 1;
+    text-align: center; /* Center-align content */
+}
+
 h1 {
     font-size: 3.5em;
     font-weight: 600;
@@ -34,16 +27,20 @@ h1 {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Project Buttons */
-.project-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
+p {
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
 }
 
-/* Button Styles */
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Wrap buttons on small screens */
+}
+
 .btn {
     display: inline-block;
     padding: 15px 35px;
@@ -55,8 +52,7 @@ h1 {
     border-radius: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    min-width: 180px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* iPhone touch fix */
 }
 
 .btn:hover {
@@ -65,11 +61,10 @@ h1 {
 }
 
 .btn:active {
-    transform: scale(0.95);
+    transform: scale(0.95); /* Touch feedback */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -78,31 +73,68 @@ footer {
     width: 100%;
 }
 
-/* Mobile Fixes */
+footer a {
+    color: #9b30ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 20px;
+}
+
+/* Fallback for browsers that don’t support backdrop-filter (e.g., some Safari versions) */
+@supports not (backdrop-filter: blur(12px)) {
+    .about, .feature-card {
+        background: rgba(25, 0, 46, 0.8); /* Solid fallback */
+    }
+}
+
+/* Mobile responsiveness */
 @media (max-width: 600px) {
     h1 {
         font-size: 2.5em;
     }
+    p {
+        font-size: 1em;
+    }
     .btn {
         padding: 12px 25px;
         font-size: 1em;
-        min-width: 150px;
     }
     .container {
         padding: 20px 10px;
     }
+    .project-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px;
+    }
+    .features {
+        grid-template-columns: 1fr; /* Single column */
+    }
 }
 
-/* Extra Fix for Narrow iPhones */
+/* Extra tweak for narrow iPhone screens (e.g., 375px or less) */
 @media (max-width: 400px) {
     h1 {
         font-size: 2.2em;
     }
+    h2 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 0.9em;
+    }
     .btn {
         padding: 10px 20px;
-        min-width: 130px;
     }
     .container {
         padding: 15px 5px;
+    }
+    .feature-card {
+        padding: 15px;
     }
 }
