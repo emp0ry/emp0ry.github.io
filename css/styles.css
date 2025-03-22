@@ -5,10 +5,9 @@ html, body {
 }
 
 body {
-    margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #4b0082; /* Fallback */
     background: linear-gradient(135deg, #2f0057 0%, #4b0082 50%, #8a2be2 100%);
+    background: #4b0082; /* Fallback */
     color: #ffffff;
     min-height: 100vh;
     overflow-x: hidden;
