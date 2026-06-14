@@ -13,8 +13,8 @@
 
     <meta name="language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="emp0ry's Hub — explore my projects: ErScripts (CS2 scripting), Hide-Icons (desktop customization), AnimeShin (unofficial AniList client), and AutoHide Cursor (automatic cursor hider for Windows).">
-    <meta name="keywords" content="emp0ry, ErScripts, Hide-Icons, AutoHideCursor, Cursor, Mouse, AnimeShin, AniList, anime, manga, GitHub projects, CS2 scripts, desktop tools">
+    <meta name="description" content="emp0ry's Hub — open-source apps, tools, and utilities: MiruShin (media app for anime, dramas, movies & TV), ErScripts (CS2 utility), Hide-Icons (desktop tool), and AutoHide Cursor (Windows cursor hider).">
+    <meta name="keywords" content="emp0ry, MiruShin, ErScripts, Hide-Icons, AutoHideCursor, anime, AniList, TMDB, CS2 scripts, desktop tools, GitHub projects, open source">
     <meta name="author" content="emp0ry">
     <meta name="robots" content="index, follow">
 
@@ -25,15 +25,12 @@
         script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
         style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
         font-src 'self' https://fonts.gstatic.com;
-        img-src 'self' https://github.githubassets.com;
+        img-src 'self' data: https://github.githubassets.com;
         connect-src 'self' https://www.google-analytics.com;
         upgrade-insecure-requests;
     ">
 
-    <!-- Performance -->
-    <meta name="theme-color" content="#4b0082">
-
-    <!-- Apple -->
+    <meta name="theme-color" content="#0a0612">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
@@ -41,82 +38,306 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://emp0ry.github.io/">
     <meta property="og:title" content="emp0ry's Hub">
-    <meta property="og:description" content="Explore AnimeShin, ErScripts, Hide-Icons, and AutoHideCursor — projects by emp0ry.">
+    <meta property="og:description" content="Open-source apps, tools & utilities — MiruShin, ErScripts, Hide-Icons, and AutoHide Cursor.">
     <meta property="og:site_name" content="emp0ry's Hub">
     <meta property="og:locale" content="en_US">
-    <!-- <meta property="og:image" content="assets/preview.png"> -->
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://emp0ry.github.io/">
     <meta name="twitter:title" content="emp0ry's Hub">
-    <meta name="twitter:description" content="Explore AnimeShin, ErScripts, Hide-Icons, and AutoHideCursor — projects by emp0ry.">
-    <!-- <meta name="twitter:image" content="assets/preview.png"> -->
+    <meta name="twitter:description" content="Open-source apps, tools & utilities — MiruShin, ErScripts, Hide-Icons, and AutoHide Cursor.">
 
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://emp0ry.github.io/">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon-dark.png">
-    <link rel="shortcut icon" type="image/png" href="https://github.githubassets.com/favicons/favicon-dark.png">
+    <!-- Inline SVG favicon (purple hex monogram) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23a855f7'/%3E%3Cstop offset='1' stop-color='%236d28d9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%230a0612'/%3E%3Cpath d='M16 5l9.5 5.5v11L16 27 6.5 21.5v-11z' fill='none' stroke='url(%23g)' stroke-width='2.2' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23c084fc'/%3E%3C/svg%3E">
 
-    <!-- Google Fonts: Poppins -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>emp0ry's Hub — Open-Source Projects</title>
 
-    <title>emp0ry's Hub - Projects by emp0ry</title>
-
-    <!-- Structured Data (Schema.org) -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "emp0ry's Hub",
         "url": "https://emp0ry.github.io/",
-        "description": "Explore my projects: AnimeShin (unofficial AniList client), ErScripts (CS2 scripting), Hide-Icons (desktop customization), and AutoHide Cursor (automatic cursor hider for Windows).",
-        "author": {
-        "@type": "Person",
-        "name": "emp0ry",
-        "url": "https://github.com/emp0ry/"
-        },
+        "description": "Open-source apps, tools, and utilities by emp0ry: MiruShin, ErScripts, Hide-Icons, and AutoHide Cursor.",
+        "author": { "@type": "Person", "name": "emp0ry", "url": "https://github.com/emp0ry/" },
         "inLanguage": "en-US",
         "about": {
-        "@type": "ItemList",
-        "itemListElement": [
-            { "@type": "SoftwareApplication", "name": "AnimeShin", "url": "https://emp0ry.github.io/AnimeShin/" },
-            { "@type": "SoftwareSourceCode", "name": "ErScripts", "url": "https://emp0ry.github.io/cs2-ErScripts/" },
-            { "@type": "SoftwareSourceCode", "name": "Hide-Icons", "url": "https://emp0ry.github.io/Hide-Icons/" }
-            { "@type": "SoftwareSourceCode", "name": "AutoHideCursor", "url": "https://emp0ry.github.io/AutoHideCursor/" }
-        ]
+            "@type": "ItemList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "MiruShin", "url": "https://github.com/emp0ry/MiruShin" } },
+                { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareSourceCode", "name": "ErScripts", "url": "https://emp0ry.github.io/cs2-ErScripts/" } },
+                { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareSourceCode", "name": "Hide-Icons", "url": "https://emp0ry.github.io/Hide-Icons/" } },
+                { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareSourceCode", "name": "AutoHideCursor", "url": "https://emp0ry.github.io/AutoHideCursor/" } }
+            ]
         }
     }
     </script>
+
+    <style>
+        :root {
+            --bg:        #0a0612;
+            --bg-soft:   #120a20;
+            --panel:     rgba(28, 18, 48, 0.55);
+            --panel-2:   rgba(40, 26, 66, 0.65);
+            --violet:    #6d28d9;
+            --purple:    #8b5cf6;
+            --purple-br: #a855f7;
+            --lilac:     #c084fc;
+            --magenta:   #d946ef;
+            --text:      #f3effc;
+            --muted:     #a99fc7;
+            --muted-2:   #7b7299;
+            --line:      rgba(168, 139, 250, 0.16);
+            --line-str:  rgba(168, 139, 250, 0.4);
+            --mx: 50vw; --my: 30vh;
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            overflow-x: hidden;
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        /* ---------- Ambient background ---------- */
+        .aurora, .grain, .cursor-glow { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+        .aurora {
+            background:
+                radial-gradient(40% 50% at 18% 12%, rgba(139, 92, 246, 0.38), transparent 70%),
+                radial-gradient(45% 55% at 88% 18%, rgba(217, 70, 239, 0.22), transparent 70%),
+                radial-gradient(55% 60% at 70% 95%, rgba(109, 40, 217, 0.40), transparent 70%),
+                radial-gradient(40% 45% at 10% 90%, rgba(168, 85, 247, 0.20), transparent 70%);
+            filter: blur(8px);
+            animation: drift 24s ease-in-out infinite alternate;
+        }
+        @keyframes drift {
+            0%   { transform: translate3d(0,0,0) scale(1); }
+            50%  { transform: translate3d(-3%, 2%, 0) scale(1.06); }
+            100% { transform: translate3d(3%, -2%, 0) scale(1.02); }
+        }
+        .grain {
+            opacity: 0.05; mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+        .cursor-glow {
+            background: radial-gradient(220px 220px at var(--mx) var(--my), rgba(168, 85, 247, 0.16), transparent 70%);
+            mix-blend-mode: screen; z-index: 1;
+            transition: background 0.05s linear;
+        }
+
+        /* ---------- Layout ---------- */
+        .wrap { position: relative; z-index: 2; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+        nav {
+            position: relative; z-index: 3;
+            display: flex; align-items: center; justify-content: space-between;
+            max-width: 1080px; margin: 0 auto; padding: 22px 24px;
+        }
+        .brand { display: inline-flex; align-items: center; gap: 10px; font-family: 'Sora', 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.15rem; letter-spacing: -0.01em; color: var(--text); text-decoration: none; }
+        .brand .mark { width: 22px; height: 22px; transform: rotate(0deg); transition: transform .6s cubic-bezier(.2,.8,.2,1); }
+        .brand:hover .mark { transform: rotate(180deg); }
+        .nav-links { display: flex; align-items: center; gap: 8px; }
+        .nav-links a {
+            font-size: 0.86rem; font-weight: 500; color: var(--muted); text-decoration: none;
+            padding: 8px 14px; border-radius: 999px; border: 1px solid transparent; transition: .2s;
+            display: inline-flex; align-items: center; gap: 7px;
+        }
+        .nav-links a:hover { color: var(--text); border-color: var(--line); background: rgba(168,139,250,0.06); }
+
+        /* ---------- Hero ---------- */
+        header.hero { padding: 64px 0 30px; text-align: center; }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: 10px;
+            font-family: 'JetBrains Mono', monospace; font-size: 0.74rem; letter-spacing: 0.32em;
+            text-transform: uppercase; color: var(--lilac); margin-bottom: 26px;
+        }
+        .eyebrow::before, .eyebrow::after { content: ""; width: 34px; height: 1px; background: linear-gradient(90deg, transparent, var(--line-str)); }
+        .eyebrow::after { background: linear-gradient(90deg, var(--line-str), transparent); }
+
+        h1 {
+            font-family: 'Sora', 'Space Grotesk', sans-serif; font-weight: 800;
+            font-size: clamp(3.4rem, 12vw, 7rem); line-height: 0.92; letter-spacing: -0.045em;
+            margin: 0; background: linear-gradient(100deg, #f3effc 0%, #c084fc 45%, #a855f7 70%, #d946ef 100%);
+            -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 8px 40px rgba(168, 85, 247, 0.25));
+        }
+        .lead { max-width: 560px; margin: 26px auto 0; font-size: 1.12rem; line-height: 1.6; color: var(--muted); }
+        .lead b { color: var(--text); font-weight: 600; }
+
+        .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 34px; }
+        .btn { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.95rem; text-decoration: none; padding: 13px 26px; border-radius: 999px; display: inline-flex; align-items: center; gap: 9px; transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .25s, border-color .2s; -webkit-tap-highlight-color: transparent; }
+        .btn-primary { color: #fff; background: linear-gradient(100deg, var(--violet), var(--purple-br)); box-shadow: 0 10px 30px -8px rgba(139, 92, 246, 0.6); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 16px 40px -10px rgba(168, 85, 247, 0.7); }
+        .btn-ghost { color: var(--text); border: 1px solid var(--line-str); background: rgba(168,139,250,0.05); }
+        .btn-ghost:hover { transform: translateY(-3px); border-color: var(--lilac); background: rgba(168,139,250,0.1); }
+        .btn:active { transform: scale(.97); }
+
+        /* ---------- Projects ---------- */
+        .section-head { display: flex; align-items: baseline; justify-content: space-between; margin: 80px 0 26px; gap: 16px; }
+        .section-head h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.5rem; letter-spacing: -0.02em; margin: 0; }
+        .section-head .count { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--muted-2); letter-spacing: 0.1em; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(258px, 1fr)); gap: 18px; padding-bottom: 30px; }
+
+        .card {
+            position: relative; display: flex; flex-direction: column; gap: 14px;
+            padding: 26px 24px 22px; border-radius: 20px; text-decoration: none; color: var(--text);
+            background: var(--panel); border: 1px solid var(--line);
+            backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+            overflow: hidden; isolation: isolate;
+            transition: transform .35s cubic-bezier(.2,.8,.2,1), border-color .3s, box-shadow .35s;
+            opacity: 0; transform: translateY(22px);
+            animation: rise .7s cubic-bezier(.2,.8,.2,1) forwards;
+            animation-delay: calc(var(--i) * 90ms + 150ms);
+        }
+        @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+        /* per-card cursor spotlight */
+        .card::before {
+            content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0; transition: opacity .3s;
+            background: radial-gradient(280px 280px at var(--cx, 50%) var(--cy, 0%), rgba(168, 85, 247, 0.18), transparent 65%);
+        }
+        .card:hover { transform: translateY(-6px); border-color: var(--line-str); box-shadow: 0 24px 50px -24px rgba(139, 92, 246, 0.55); }
+        .card:hover::before { opacity: 1; }
+        .card:focus-visible { outline: 2px solid var(--lilac); outline-offset: 3px; }
+
+        .card-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.42rem; letter-spacing: -0.02em; margin: 0; }
+        .card-desc { font-size: 0.95rem; line-height: 1.5; color: var(--muted); margin: 0; flex: 1; }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+        .card-tags span { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--lilac); padding: 4px 9px; border-radius: 7px; background: rgba(168,139,250,0.09); border: 1px solid var(--line); }
+        .card-cta { display: inline-flex; align-items: center; gap: 7px; font-size: 0.85rem; font-weight: 600; color: var(--muted); margin-top: 4px; transition: color .25s, gap .25s; }
+        .card:hover .card-cta { color: var(--lilac); gap: 11px; }
+
+        /* ---------- Footer ---------- */
+        footer { position: relative; z-index: 2; border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0 40px; }
+        .foot-inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+        .foot-inner p { margin: 0; font-size: 0.86rem; color: var(--muted-2); }
+        .foot-inner a { color: var(--lilac); text-decoration: none; }
+        .foot-inner a:hover { text-decoration: underline; }
+        .foot-links { display: flex; gap: 18px; font-size: 0.86rem; }
+        .foot-links a { color: var(--muted); }
+        .foot-links a:hover { color: var(--text); text-decoration: none; }
+
+        @media (max-width: 560px) {
+            .nav-links a:not(.icon-only) { padding: 8px 11px; }
+            header.hero { padding: 40px 0 18px; }
+            .section-head { margin-top: 56px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .aurora { animation: none; }
+            .card { animation: none; opacity: 1; transform: none; }
+            html { scroll-behavior: auto; }
+            .brand .mark, .btn, .card, .card-cta { transition: none; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>emp0ry's Hub</h1>
-        </div>
-    </header>
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-    <main class="container">
-        <section class="about">
-            <p>Welcome to my collection of projects! Explore <strong>ErScripts</strong> (CS2 scripting), <strong>Hide-Icons</strong> (desktop customization), <strong>AutoHide Cursor</strong> (automatic cursor hider for Windows), and <strong>AnimeShin</strong> (unofficial AniList client) below.</p>
-            <div class="project-buttons">
-                <a href="/cs2-ErScripts/" class="btn" aria-label="Visit ErScripts">ErScripts</a>
-                <a href="/Hide-Icons/" class="btn" aria-label="Visit Hide-Icons">Hide-Icons</a>
-                <a href="/AnimeShin/" class="btn" aria-label="Visit AnimeShin">AnimeShin</a>
-                <a href="/AutoHideCursor/" class="btn" aria-label="Visit AnimeShin">AutoHideCursor</a>
+    <nav>
+        <a class="brand" href="/" aria-label="emp0ry home">
+            <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+                <defs><linearGradient id="bm" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#6d28d9"/>
+                </linearGradient></defs>
+                <path d="M16 4l10.4 6v12L16 28 5.6 22V10z" fill="none" stroke="url(#bm)" stroke-width="2.2" stroke-linejoin="round"/>
+                <circle cx="16" cy="16" r="3" fill="#c084fc"/>
+            </svg>
+            emp0ry
+        </a>
+        <div class="nav-links">
+            <a href="https://github.com/emp0ry" target="_blank" rel="noopener">GitHub
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="https://www.buymeacoffee.com/emp0ry" target="_blank" rel="noopener">Support</a>
+        </div>
+    </nav>
+
+    <main class="wrap">
+        <header class="hero">
+            <span class="eyebrow">Open-Source Developer</span>
+            <h1>emp0ry</h1>
+            <p class="lead">I build <b>apps, tools, and utilities</b> that make digital experiences simpler, cleaner, and more enjoyable. Everything here is open source and free to use.</p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="https://github.com/emp0ry" target="_blank" rel="noopener">
+                    Explore on GitHub
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="btn btn-ghost" href="https://www.buymeacoffee.com/emp0ry" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+            </div>
+        </header>
+
+        <section aria-labelledby="projects-title">
+            <div class="section-head">
+                <h2 id="projects-title">Projects</h2>
+                <span class="count">04 / SELECTED</span>
+            </div>
+
+            <div class="grid">
+                <a class="card" style="--i:0" href="https://github.com/emp0ry/MiruShin" target="_blank" rel="noopener" aria-label="Visit MiruShin">
+                    <h3 class="card-name">MiruShin</h3>
+                    <p class="card-desc">Modern media app for anime, dramas, movies & TV shows — powered by TMDB and AniList.</p>
+                    <div class="card-tags"><span>Flutter</span><span>Dart</span><span>Cross-platform</span></div>
+                    <span class="card-cta">Open project
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </a>
+
+                <a class="card" style="--i:1" href="/cs2-ErScripts/" aria-label="Visit ErScripts">
+                    <h3 class="card-name">ErScripts</h3>
+                    <p class="card-desc">External CS2 utility with an overlay, binds, GSI tools, and quality-of-life features.</p>
+                    <div class="card-tags"><span>C++</span><span>CS2</span><span>Overlay</span></div>
+                    <span class="card-cta">Open project
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </a>
+
+                <a class="card" style="--i:2" href="/Hide-Icons/" aria-label="Visit Hide-Icons">
+                    <h3 class="card-name">Hide Icons</h3>
+                    <p class="card-desc">Lightweight Windows tray app to show or hide desktop icons with a global hotkey.</p>
+                    <div class="card-tags"><span>Windows</span><span>C++</span><span>Tray</span></div>
+                    <span class="card-cta">Open project
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </a>
+
+                <a class="card" style="--i:3" href="/AutoHideCursor/" aria-label="Visit AutoHide Cursor">
+                    <h3 class="card-name">AutoHide Cursor</h3>
+                    <p class="card-desc">Windows tray app that automatically hides the mouse cursor after inactivity.</p>
+                    <div class="card-tags"><span>Windows</span><span>C++</span><span>Tray</span></div>
+                    <span class="card-cta">Open project
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 <a href="https://github.com/emp0ry/" aria-label="Visit emp0ry's GitHub profile">emp0ry</a></p>
+        <div class="foot-inner">
+            <p>&copy; <span id="year">2026</span> <a href="https://github.com/emp0ry/" rel="noopener">emp0ry</a> · Built with purple &amp; care.</p>
+            <div class="foot-links">
+                <a href="https://github.com/emp0ry" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.buymeacoffee.com/emp0ry" target="_blank" rel="noopener">Support</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
