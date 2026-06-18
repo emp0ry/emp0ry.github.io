@@ -3,31 +3,31 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://emp0ry.github.io/</loc>
+        <loc>https://emp0ry.com/</loc>
         <lastmod>2026-06-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://emp0ry.github.io/MiruShin/</loc>
+        <loc>https://mirushin.emp0ry.com/</loc>
         <lastmod>2026-06-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://emp0ry.github.io/cs2-ErScripts/</loc>
+        <loc>https://erscripts.emp0ry.com/</loc>
         <lastmod>2026-06-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://emp0ry.github.io/Hide-Icons/</loc>
+        <loc>https://hideicons.emp0ry.com/</loc>
         <lastmod>2026-06-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://emp0ry.github.io/AutoHideCursor/</loc>
+        <loc>https://hidecursor.emp0ry.com/</loc>
         <lastmod>2026-06-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
