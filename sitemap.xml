@@ -32,4 +32,28 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://isaaceidios.emp0ry.com/</loc>
+        <lastmod>2026-10-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://isaacsteamios.emp0ry.com/</loc>
+        <lastmod>2026-10-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://isaacconsoleios.emp0ry.com/</loc>
+        <lastmod>2026-10-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://altdaemon.emp0ry.com/</loc>
+        <lastmod>2026-10-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
