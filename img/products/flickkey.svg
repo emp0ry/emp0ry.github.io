@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>FlickKey</title>
+  <desc>A keyboard key with an alternate character and a downward flick.</desc>
+  <defs>
+    <linearGradient id="background" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#164854"/>
+      <stop offset="1" stop-color="#081F30"/>
+    </linearGradient>
+    <linearGradient id="key" x1="0%" y1="0%" x2="85%" y2="100%">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFF4EF"/>
+    </linearGradient>
+    <linearGradient id="gesture" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop stop-color="#68DDC1"/>
+      <stop offset="1" stop-color="#168B83"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#background)"/>
+  <rect x="232" y="222" width="560" height="622" rx="104" fill="#041521" opacity=".32"/>
+  <rect x="232" y="198" width="560" height="622" rx="104" fill="url(#key)"/>
+  <rect x="246" y="212" width="532" height="594" rx="92" fill="none" stroke="#FFFFFF" stroke-opacity=".65" stroke-width="3"/>
+  <!-- Paths keep SVG and PNG glyphs identical without font dependencies. -->
+  <path d="M330 684 421 443Q424 435 433 435H458Q467 435 470 443L561 684H512L491 624H399L378 684ZM414 582H477L446 488Z" fill="#153C48" fill-rule="evenodd"/>
+  <path d="M616 300 650 280H681V394H650V313L628 326Z" fill="#218F8A"/>
+  <path d="M665 446V654M611 604 665 660 719 604" fill="none" stroke="url(#gesture)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="665" cy="726" r="9" fill="#218F8A" opacity=".35"/>
+</svg>

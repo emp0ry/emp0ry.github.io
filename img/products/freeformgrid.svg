@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <clipPath id="icon-mask">
+      <rect width="1024" height="1024" rx="224"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#icon-mask)">
+  <rect width="1024" height="1024" rx="224" fill="#3f30e4"/>
+  <circle cx="806" cy="204" r="224" fill="#8e7cff" opacity="0.34"/>
+  <circle cx="176" cy="866" r="286" fill="#24179a" opacity="0.42"/>
+
+  <g fill="#f7f6ff">
+    <rect x="218" y="218" width="164" height="164" rx="42"/>
+    <rect x="430" y="218" width="164" height="164" rx="42"/>
+    <rect x="642" y="218" width="164" height="164" rx="42"/>
+    <rect x="218" y="430" width="164" height="164" rx="42"/>
+    <rect x="642" y="430" width="164" height="164" rx="42"/>
+    <rect x="218" y="642" width="164" height="164" rx="42"/>
+    <rect x="430" y="642" width="164" height="164" rx="42"/>
+    <rect x="642" y="642" width="164" height="164" rx="42"/>
+  </g>
+
+  <rect x="439" y="439" width="146" height="146" rx="37"
+        fill="#3f30e4" stroke="#ffffff" stroke-width="18" opacity="0.52"
+        stroke-dasharray="30 22"/>
+
+  <rect x="480" y="374" width="200" height="200" rx="54"
+        fill="#2fe1ee"/>
+  <path d="M539 474h82M600 433l41 41-41 41"
+        fill="#1138a3" stroke="#1138a3" stroke-width="24"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

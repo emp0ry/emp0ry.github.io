@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <clipPath id="roundedIcon">
+      <rect width="1024" height="1024" rx="224"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#roundedIcon)">
+    <rect width="1024" height="1024" fill="#4768ef"/>
+    <circle cx="832" cy="166" r="250" fill="#a9d5ff" opacity="0.18"/>
+    <circle cx="126" cy="898" r="310" fill="#2416a3" opacity="0.22"/>
+
+    <rect x="218" y="250" width="588" height="574" rx="146" fill="#ffffff"/>
+    <rect x="300" y="332" width="150" height="150" rx="44" fill="#dcecff"/>
+    <rect x="500" y="332" width="150" height="150" rx="44" fill="#dcecff"/>
+    <rect x="300" y="532" width="150" height="150" rx="44" fill="#dcecff"/>
+    <path d="M519 607h137" stroke="#5c54eb" stroke-width="54" stroke-linecap="round"/>
+
+    <circle cx="742" cy="292" r="150" fill="#ff4d67"/>
+    <polygon points="667,247 697,217 817,337 787,367" fill="#ffffff"/>
+    <polygon points="787,217 817,247 697,367 667,337" fill="#ffffff"/>
+
+    <path d="M500 745c96 0 184-25 252-70" fill="none" stroke="#31c8ff" stroke-width="34" stroke-linecap="round"/>
+    <path d="M558 794c84-4 160-25 222-62" fill="none" stroke="#31c8ff" stroke-width="24" stroke-linecap="round" opacity="0.72"/>
+  </g>
+</svg>
